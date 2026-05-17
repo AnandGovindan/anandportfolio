@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Anand G — Shopify & WordPress Developer. 2 years of experience building modern ecommerce stores and high-converting business websites." />
+  <meta name="keywords" content="Shopify Developer, WordPress Developer, Ecommerce, WooCommerce, Web Developer, India" />
+  <meta name="author" content="Anand G" />
+  <title>Anand G — Shopify & WordPress Developer</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Satoshi via CDN -->
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap" rel="stylesheet" />
+
+  <!-- Remix Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ==================== PAGE LOADER ==================== -->
+  <div id="loader" class="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">AG</div>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- ==================== CUSTOM CURSOR ==================== -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-text">AG</span>
+        <span class="logo-dot"></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#services" class="nav-link" data-section="services">Services</a></li>
+        <li><a href="#portfolio" class="nav-link" data-section="portfolio">Work</a></li>
+        <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+      <a href="mailto:anandg.shopy@gmail.com" class="nav-cta">Hire Me</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ==================== HERO ==================== -->
+  <section id="home" class="hero">
+    <!-- Animated background blobs -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <!-- Grid overlay -->
+    <div class="grid-overlay"></div>
+
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge reveal-up" style="--delay:0.1s">
+          <span class="badge-dot"></span>
+          Available for Freelance Projects
+        </div>
+
+        <h1 class="hero-heading reveal-up" style="--delay:0.25s">
+          Hi, I'm <span class="gradient-text">Anand G</span>
+        </h1>
+
+        <div class="hero-roles reveal-up" style="--delay:0.4s">
+          <span class="role-static">I'm a&nbsp;</span>
+          <span class="typing-wrapper">
+            <span id="typingText" class="typing-text"></span>
+            <span class="cursor-blink">|</span>
+          </span>
+        </div>
+
+        <p class="hero-desc reveal-up" style="--delay:0.55s">
+          I create modern ecommerce stores and high-converting business websites
+          that drive real results — built with precision, performance, and passion.
+        </p>
+
+        <div class="hero-actions reveal-up" style="--delay:0.7s">
+          <a href="#portfolio" class="btn btn-primary">
+            <i class="ri-eye-line"></i> View My Work
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i class="ri-send-plane-line"></i> Let's Talk
+          </a>
+          <a href="resume.pdf" download class="btn btn-ghost">
+            <i class="ri-download-line"></i> Resume
+          </a>
+        </div>
+
+        <div class="hero-stats reveal-up" style="--delay:0.85s">
+          <div class="stat-item">
+            <span class="stat-number" data-count="2">0</span>
+            <span class="stat-label">Years Exp.</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number" data-count="30">0</span>
+            <span class="stat-label">Projects Done</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number" data-count="25">0</span>
+            <span class="stat-label">Happy Clients</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal-right" style="--delay:0.5s">
+        <div class="profile-card">
+          <div class="profile-ring ring-1"></div>
+          <div class="profile-ring ring-2"></div>
+          <div class="profile-ring ring-3"></div>
+          <div class="profile-avatar">
+            <div class="avatar-initials">AG</div>
+            <div class="avatar-glow"></div>
+          </div>
+          <!-- Floating tech chips -->
+          <div class="tech-chip chip-1"><i class="ri-shopping-bag-line"></i> Shopify</div>
+          <div class="tech-chip chip-2"><i class="ri-wordpress-line"></i> WordPress</div>
+          <div class="tech-chip chip-3"><i class="ri-code-s-slash-line"></i> WooCommerce</div>
+          <div class="tech-chip chip-4"><i class="ri-seo-line"></i> SEO</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT ==================== -->
+  <section id="about" class="about section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">Crafting Digital <span class="gradient-text">Experiences</span></h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-left reveal-left">
+          <div class="about-image-wrapper">
+            <div class="about-image-bg"></div>
+            <div class="about-image-card">
+              <div class="about-initials-large">AG</div>
+              <div class="about-tag-float">
+                <i class="ri-verified-badge-fill"></i> Verified Developer
+              </div>
+            </div>
+            <!-- Floating info boxes -->
+            <div class="info-float info-float-1">
+              <i class="ri-shopping-bag-2-line"></i>
+              <div>
+                <strong>Shopify Expert</strong>
+                <span>Theme & Apps</span>
+              </div>
+            </div>
+            <div class="info-float info-float-2">
+              <i class="ri-star-fill"></i>
+              <div>
+                <strong>5-Star Rated</strong>
+                <span>25+ Reviews</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-right reveal-right">
+          <p class="about-intro">
+            I'm a passionate <strong>Shopify & WordPress Developer</strong> with 2 years of hands-on experience
+            building high-performance ecommerce stores and business websites that convert visitors into customers.
+          </p>
+          <p class="about-body">
+            My expertise lies in crafting pixel-perfect Shopify stores with custom Liquid themes,
+            building WordPress sites with advanced customization, and optimizing for speed, SEO,
+            and conversion — delivering real business impact.
+          </p>
+
+          <div class="about-expertise">
+            <div class="expertise-card">
+              <div class="expertise-icon"><i class="ri-shopping-bag-line"></i></div>
+              <div>
+                <strong>Shopify Development</strong>
+                <span>Liquid, Theme Customization, Apps</span>
+              </div>
+            </div>
+            <div class="expertise-card">
+              <div class="expertise-icon"><i class="ri-wordpress-line"></i></div>
+              <div>
+                <strong>WordPress & WooCommerce</strong>
+                <span>Elementor, Custom Themes, Plugins</span>
+              </div>
+            </div>
+            <div class="expertise-card">
+              <div class="expertise-icon"><i class="ri-speed-line"></i></div>
+              <div>
+                <strong>Performance & SEO</strong>
+                <span>Core Web Vitals, On-Page SEO</span>
+              </div>
+            </div>
+            <div class="expertise-card">
+              <div class="expertise-icon"><i class="ri-device-line"></i></div>
+              <div>
+                <strong>Responsive Design</strong>
+                <span>Mobile-First, Cross-Browser</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="#contact" class="btn btn-primary">
+            <i class="ri-arrow-right-line"></i> Work With Me
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SKILLS ==================== -->
+  <section id="skills" class="skills section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Skills & Expertise</span>
+        <h2 class="section-title">My <span class="gradient-text">Tech Stack</span></h2>
+        <p class="section-subtitle">Technologies I use to bring ideas to life</p>
+      </div>
+
+      <div class="skills-grid">
+
+        <div class="skill-card reveal-up" style="--delay:0s">
+          <div class="skill-card-header">
+            <div class="skill-icon" style="--clr:#96bf48"><i class="ri-shopping-bag-2-line"></i></div>
+            <div class="skill-info">
+              <span class="skill-name">Shopify Liquid</span>
+              <span class="skill-percent">90%</span>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="90" style="--clr:#96bf48"></div>
+          </div>
+          <p class="skill-desc">Custom themes, sections, blocks, and advanced Liquid templating</p>
+        </div>
+
+        <div class="skill-card reveal-up" style="--delay:0.1s">
+          <div class="skill-card-header">
+            <div class="skill-icon" style="--clr:#7b2fff"><i class="ri-store-2-line"></i></div>
+            <div class="skill-info">
+              <span class="skill-name">Shopify Customization</span>
+              <span class="skill-percent">88%</span>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="88" style="--clr:#7b2fff"></div>
+          </div>
+          <p class="skill-desc">Theme customization, app integration, checkout optimization</p>
+        </div>
+
+        <div class="skill-card reveal-up" style="--delay:0.2s">
+          <div class="skill-card-header">
+            <div class="skill-icon" style="--clr:#00d4ff"><i class="ri-seo-line"></i></div>
+            <div class="skill-info">
+              <span class="skill-name">Shopify SEO</span>
+              <span class="skill-percent">82%</span>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="82" style="--clr:#00d4ff"></div>
+          </div>
+          <p class="skill-desc">On-page SEO, structured data, speed optimization, meta strategy</p>
+        </div>
+
+        <div class="skill-card reveal-up" style="--delay:0.3s">
+          <div class="skill-card-header">
+            <div class="skill-icon" style="--clr:#21759b"><i class="ri-wordpress-line"></i></div>
+            <div class="skill-info">
+              <span class="skill-name">WordPress Development</span>
+              <span class="skill-percent">85%</span>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="85" style="--clr:#21759b"></div>
+          </div>
+          <p class="skill-desc">Custom themes, plugin integration, advanced WordPress setups</p>
+        </div>
+
+        <div class="skill-card reveal-up" style="--delay:0.4s">
+          <div class="skill-card-header">
+            <div class="skill-icon" style="--clr:#a46497"><i class="ri-shopping-cart-2-line"></i></div>
+            <div class="skill-info">
+              <span class="skill-name">WooCommerce</span>
+              <span class="skill-percent">83%</span>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="83" style="--clr:#a46497"></div>
+          </div>
+          <p class="skill-desc">Full WooCommerce store setup, payment gateways, custom products</p>
+        </div>
+
+        <div class="skill-card reveal-up" style="--delay:0.5s">
+          <div class="skill-card-header">
+            <div class="skill-icon" style="--clr:#f54743"><i class="ri-layout-4-line"></i></div>
+            <div class="skill-info">
+              <span class="skill-name">Elementor</span>
+              <span class="skill-percent">88%</span>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="88" style="--clr:#f54743"></div>
+          </div>
+          <p class="skill-desc">Advanced Elementor page building, custom widgets, Pro features</p>
+        </div>
+
+        <div class="skill-card reveal-up" style="--delay:0.6s">
+          <div class="skill-card-header">
+            <div class="skill-icon" style="--clr:#e44d26"><i class="ri-html5-line"></i></div>
+            <div class="skill-info">
+              <span class="skill-name">HTML5 / CSS3</span>
+              <span class="skill-percent">92%</span>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="92" style="--clr:#e44d26"></div>
+          </div>
+          <p class="skill-desc">Semantic HTML, modern CSS Grid, Flexbox, animations</p>
+        </div>
+
+        <div class="skill-card reveal-up" style="--delay:0.7s">
+          <div class="skill-card-header">
+            <div class="skill-icon" style="--clr:#f7df1e"><i class="ri-javascript-line"></i></div>
+            <div class="skill-info">
+              <span class="skill-name">JavaScript</span>
+              <span class="skill-percent">78%</span>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="78" style="--clr:#f7df1e"></div>
+          </div>
+          <p class="skill-desc">DOM manipulation, ES6+, async operations, API integrations</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SERVICES ==================== -->
+  <section id="services" class="services section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I Offer</span>
+        <h2 class="section-title">Premium <span class="gradient-text">Services</span></h2>
+        <p class="section-subtitle">End-to-end development solutions tailored to your business</p>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="service-card reveal-up" style="--delay:0s">
+          <div class="service-card-glow"></div>
+          <div class="service-icon"><i class="ri-shopping-bag-2-line"></i></div>
+          <h3 class="service-title">Shopify Store Development</h3>
+          <p class="service-desc">
+            End-to-end Shopify store setup with custom Liquid themes, product pages,
+            collection layouts, and a checkout experience built to convert.
+          </p>
+          <ul class="service-features">
+            <li><i class="ri-check-line"></i> Custom Theme Design</li>
+            <li><i class="ri-check-line"></i> Product & Collection Setup</li>
+            <li><i class="ri-check-line"></i> Payment Gateway Integration</li>
+          </ul>
+          <div class="service-arrow"><i class="ri-arrow-right-up-line"></i></div>
+        </div>
+
+        <div class="service-card reveal-up" style="--delay:0.1s">
+          <div class="service-card-glow"></div>
+          <div class="service-icon"><i class="ri-palette-line"></i></div>
+          <h3 class="service-title">Shopify Customization</h3>
+          <p class="service-desc">
+            Transform your existing Shopify store with advanced theme customization,
+            custom sections, app integration, and Liquid code enhancements.
+          </p>
+          <ul class="service-features">
+            <li><i class="ri-check-line"></i> Theme Customization</li>
+            <li><i class="ri-check-line"></i> Custom Sections & Blocks</li>
+            <li><i class="ri-check-line"></i> Third-Party App Integration</li>
+          </ul>
+          <div class="service-arrow"><i class="ri-arrow-right-up-line"></i></div>
+        </div>
+
+        <div class="service-card reveal-up" style="--delay:0.2s">
+          <div class="service-card-glow"></div>
+          <div class="service-icon"><i class="ri-wordpress-line"></i></div>
+          <h3 class="service-title">WordPress Development</h3>
+          <p class="service-desc">
+            Stunning WordPress websites with custom themes, advanced page builder setups,
+            and robust plugin configurations that scale with your business.
+          </p>
+          <ul class="service-features">
+            <li><i class="ri-check-line"></i> Custom Theme Development</li>
+            <li><i class="ri-check-line"></i> Elementor Pro Designs</li>
+            <li><i class="ri-check-line"></i> Plugin Customization</li>
+          </ul>
+          <div class="service-arrow"><i class="ri-arrow-right-up-line"></i></div>
+        </div>
+
+        <div class="service-card reveal-up" style="--delay:0.3s">
+          <div class="service-card-glow"></div>
+          <div class="service-icon"><i class="ri-shopping-cart-2-line"></i></div>
+          <h3 class="service-title">WooCommerce Setup</h3>
+          <p class="service-desc">
+            Full-featured WooCommerce stores with product management, payment gateway
+            integration, shipping rules, and conversion-optimized layouts.
+          </p>
+          <ul class="service-features">
+            <li><i class="ri-check-line"></i> Full Store Configuration</li>
+            <li><i class="ri-check-line"></i> Payment & Shipping Setup</li>
+            <li><i class="ri-check-line"></i> Custom Product Types</li>
+          </ul>
+          <div class="service-arrow"><i class="ri-arrow-right-up-line"></i></div>
+        </div>
+
+        <div class="service-card reveal-up" style="--delay:0.4s">
+          <div class="service-card-glow"></div>
+          <div class="service-icon"><i class="ri-speed-line"></i></div>
+          <h3 class="service-title">Website Optimization</h3>
+          <p class="service-desc">
+            Speed, SEO, and conversion optimization services — from Core Web Vitals
+            improvements to on-page SEO and performance audits that deliver results.
+          </p>
+          <ul class="service-features">
+            <li><i class="ri-check-line"></i> Page Speed Optimization</li>
+            <li><i class="ri-check-line"></i> On-Page SEO Audit</li>
+            <li><i class="ri-check-line"></i> Core Web Vitals Fix</li>
+          </ul>
+          <div class="service-arrow"><i class="ri-arrow-right-up-line"></i></div>
+        </div>
+
+        <div class="service-card reveal-up" style="--delay:0.5s">
+          <div class="service-card-glow"></div>
+          <div class="service-icon"><i class="ri-layout-2-line"></i></div>
+          <h3 class="service-title">Landing Page Design</h3>
+          <p class="service-desc">
+            High-converting landing pages designed with persuasion architecture,
+            compelling CTAs, and optimized layouts that turn traffic into leads.
+          </p>
+          <ul class="service-features">
+            <li><i class="ri-check-line"></i> Conversion-Focused Design</li>
+            <li><i class="ri-check-line"></i> A/B Test Ready</li>
+            <li><i class="ri-check-line"></i> Mobile Optimized</li>
+          </ul>
+          <div class="service-arrow"><i class="ri-arrow-right-up-line"></i></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PORTFOLIO ==================== -->
+  <section id="portfolio" class="portfolio section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">My Work</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <p class="section-subtitle">A selection of my best work across platforms</p>
+      </div>
+
+      <!-- Category Filters -->
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="shopify">Shopify</button>
+        <button class="filter-btn" data-filter="wordpress">WordPress</button>
+        <button class="filter-btn" data-filter="ecommerce">Ecommerce</button>
+        <button class="filter-btn" data-filter="landing">Landing Pages</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+
+        <div class="project-card reveal-up" data-category="shopify ecommerce" style="--delay:0s">
+          <div class="project-img-wrapper">
+            <div class="project-img-placeholder" style="--clr1:#96bf48;--clr2:#2c5f2e">
+              <div class="proj-icon"><i class="ri-shopping-bag-2-line"></i></div>
+            </div>
+            <div class="project-overlay">
+              <div class="overlay-actions">
+                <a href="#" class="overlay-btn"><i class="ri-eye-line"></i> Preview</a>
+                <a href="#" class="overlay-btn outline"><i class="ri-github-line"></i> Code</a>
+              </div>
+            </div>
+            <div class="project-badge">Shopify</div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">FreshBrew Store</h3>
+            <p class="project-desc">Custom Shopify store for a specialty coffee brand with subscription functionality and a custom Liquid theme.</p>
+            <div class="project-tags">
+              <span>Shopify Liquid</span><span>Theme Dev</span><span>Subscriptions</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" data-category="wordpress" style="--delay:0.1s">
+          <div class="project-img-wrapper">
+            <div class="project-img-placeholder" style="--clr1:#7b2fff;--clr2:#3a0099">
+              <div class="proj-icon"><i class="ri-wordpress-line"></i></div>
+            </div>
+            <div class="project-overlay">
+              <div class="overlay-actions">
+                <a href="#" class="overlay-btn"><i class="ri-eye-line"></i> Preview</a>
+                <a href="#" class="overlay-btn outline"><i class="ri-github-line"></i> Code</a>
+              </div>
+            </div>
+            <div class="project-badge">WordPress</div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Luxe Realty Hub</h3>
+            <p class="project-desc">Real estate WordPress website with property listings, advanced search, and a modern Elementor Pro design system.</p>
+            <div class="project-tags">
+              <span>WordPress</span><span>Elementor</span><span>Custom CPT</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" data-category="ecommerce wordpress" style="--delay:0.2s">
+          <div class="project-img-wrapper">
+            <div class="project-img-placeholder" style="--clr1:#a46497;--clr2:#5a1a5a">
+              <div class="proj-icon"><i class="ri-shopping-cart-2-line"></i></div>
+            </div>
+            <div class="project-overlay">
+              <div class="overlay-actions">
+                <a href="#" class="overlay-btn"><i class="ri-eye-line"></i> Preview</a>
+                <a href="#" class="overlay-btn outline"><i class="ri-github-line"></i> Code</a>
+              </div>
+            </div>
+            <div class="project-badge">WooCommerce</div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">GlowSkin Boutique</h3>
+            <p class="project-desc">WooCommerce beauty store with advanced product filtering, bundle deals, and a subscription model for skincare.</p>
+            <div class="project-tags">
+              <span>WooCommerce</span><span>WordPress</span><span>SEO</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" data-category="landing" style="--delay:0.3s">
+          <div class="project-img-wrapper">
+            <div class="project-img-placeholder" style="--clr1:#00d4ff;--clr2:#005580">
+              <div class="proj-icon"><i class="ri-layout-2-line"></i></div>
+            </div>
+            <div class="project-overlay">
+              <div class="overlay-actions">
+                <a href="#" class="overlay-btn"><i class="ri-eye-line"></i> Preview</a>
+                <a href="#" class="overlay-btn outline"><i class="ri-github-line"></i> Code</a>
+              </div>
+            </div>
+            <div class="project-badge">Landing Page</div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">SaaS Launch Pro</h3>
+            <p class="project-desc">High-converting SaaS landing page with animated hero, pricing section, testimonials, and optimized lead capture.</p>
+            <div class="project-tags">
+              <span>HTML/CSS/JS</span><span>Conversion</span><span>Animation</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" data-category="shopify" style="--delay:0.4s">
+          <div class="project-img-wrapper">
+            <div class="project-img-placeholder" style="--clr1:#f7941d;--clr2:#8b4000">
+              <div class="proj-icon"><i class="ri-t-shirt-line"></i></div>
+            </div>
+            <div class="project-overlay">
+              <div class="overlay-actions">
+                <a href="#" class="overlay-btn"><i class="ri-eye-line"></i> Preview</a>
+                <a href="#" class="overlay-btn outline"><i class="ri-github-line"></i> Code</a>
+              </div>
+            </div>
+            <div class="project-badge">Shopify</div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">UrbanThread Fashion</h3>
+            <p class="project-desc">Fashion Shopify store with custom product configurator, size guide, lookbook, and advanced collection filtering.</p>
+            <div class="project-tags">
+              <span>Shopify</span><span>Liquid</span><span>AJAX Cart</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" data-category="wordpress landing" style="--delay:0.5s">
+          <div class="project-img-wrapper">
+            <div class="project-img-placeholder" style="--clr1:#ff6b6b;--clr2:#8b0000">
+              <div class="proj-icon"><i class="ri-restaurant-line"></i></div>
+            </div>
+            <div class="project-overlay">
+              <div class="overlay-actions">
+                <a href="#" class="overlay-btn"><i class="ri-eye-line"></i> Preview</a>
+                <a href="#" class="overlay-btn outline"><i class="ri-github-line"></i> Code</a>
+              </div>
+            </div>
+            <div class="project-badge">WordPress</div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Savoria Restaurant</h3>
+            <p class="project-desc">WordPress restaurant website with online reservation system, menu showcase, and local SEO optimization.</p>
+            <div class="project-tags">
+              <span>WordPress</span><span>Local SEO</span><span>Elementor</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== EXPERIENCE ==================== -->
+  <section id="experience" class="experience section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">My Journey</span>
+        <h2 class="section-title">Experience <span class="gradient-text">Timeline</span></h2>
+      </div>
+
+      <div class="timeline">
+
+        <div class="timeline-item reveal-left" style="--delay:0s">
+          <div class="timeline-dot"><i class="ri-shopping-bag-line"></i></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-date"><i class="ri-calendar-line"></i> 2023 – Present</span>
+              <span class="timeline-badge active">Current</span>
+            </div>
+            <h3 class="timeline-title">Freelance Shopify & WordPress Developer</h3>
+            <p class="timeline-company">Self-Employed / Remote</p>
+            <p class="timeline-desc">
+              Working with clients globally to deliver custom Shopify stores, WordPress websites, 
+              and WooCommerce solutions. Focus on performance, SEO, and conversion optimization.
+            </p>
+            <div class="timeline-skills">
+              <span>Shopify Liquid</span><span>WordPress</span><span>WooCommerce</span><span>SEO</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-right" style="--delay:0.2s">
+          <div class="timeline-dot"><i class="ri-code-s-slash-line"></i></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-date"><i class="ri-calendar-line"></i> 2022 – 2023</span>
+            </div>
+            <h3 class="timeline-title">Junior Web Developer</h3>
+            <p class="timeline-company">Digital Agency — Mangalore, India</p>
+            <p class="timeline-desc">
+              Built and maintained WordPress websites for small businesses and startups.
+              Gained hands-on experience with Elementor, WooCommerce, and custom theme development.
+            </p>
+            <div class="timeline-skills">
+              <span>WordPress</span><span>Elementor</span><span>HTML/CSS</span><span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-left" style="--delay:0.4s">
+          <div class="timeline-dot"><i class="ri-graduation-cap-line"></i></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-date"><i class="ri-calendar-line"></i> 2021 – 2022</span>
+            </div>
+            <h3 class="timeline-title">Self-Learning & Certification Phase</h3>
+            <p class="timeline-company">Online Platforms & Courses</p>
+            <p class="timeline-desc">
+              Completed intensive courses in Shopify development, WordPress, HTML5, CSS3, 
+              and JavaScript. Built personal projects to solidify practical skills.
+            </p>
+            <div class="timeline-skills">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Shopify</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TESTIMONIALS ==================== -->
+  <section id="testimonials" class="testimonials section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Client Love</span>
+        <h2 class="section-title">What Clients <span class="gradient-text">Say</span></h2>
+      </div>
+
+      <div class="testimonials-track-wrapper">
+        <div class="testimonials-track" id="testimonialsTrack">
+
+          <div class="testimonial-card">
+            <div class="testi-stars"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></div>
+            <p class="testi-text">
+              "Anand built our Shopify store from scratch and it looks absolutely stunning. 
+              The conversion rate improved by 40% within the first month. Highly professional!"
+            </p>
+            <div class="testi-author">
+              <div class="testi-avatar">RK</div>
+              <div>
+                <strong>Rajesh Kumar</strong>
+                <span>Founder, FreshBrew Coffee</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testi-stars"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></div>
+            <p class="testi-text">
+              "Our WordPress site is exactly what we envisioned. Anand understood our brand 
+              perfectly and delivered a beautiful, fast website well ahead of schedule."
+            </p>
+            <div class="testi-author">
+              <div class="testi-avatar">PS</div>
+              <div>
+                <strong>Priya Sharma</strong>
+                <span>CEO, Luxe Realty Hub</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testi-stars"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-half-line"></i></div>
+            <p class="testi-text">
+              "The WooCommerce store Anand built for us handles 500+ orders a month without 
+              a hitch. The SEO work alone has tripled our organic traffic. Outstanding!"
+            </p>
+            <div class="testi-author">
+              <div class="testi-avatar">AM</div>
+              <div>
+                <strong>Aisha Mehta</strong>
+                <span>Owner, GlowSkin Boutique</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testi-stars"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></div>
+            <p class="testi-text">
+              "Anand redesigned our Shopify store and the results were immediate — bounce rate 
+              dropped 30% and our average order value increased significantly. Superb work!"
+            </p>
+            <div class="testi-author">
+              <div class="testi-avatar">VN</div>
+              <div>
+                <strong>Vikram Nair</strong>
+                <span>Director, UrbanThread Fashion</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testi-stars"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></div>
+            <p class="testi-text">
+              "Working with Anand was seamless. He's responsive, detail-oriented, and truly 
+              understands ecommerce. Our landing page converts at 8% — double the industry average!"
+            </p>
+            <div class="testi-author">
+              <div class="testi-avatar">SK</div>
+              <div>
+                <strong>Sanjay Kapoor</strong>
+                <span>Founder, SaaS Launch Pro</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="testi-controls">
+          <button class="testi-btn" id="testiPrev"><i class="ri-arrow-left-s-line"></i></button>
+          <div class="testi-dots" id="testiDots"></div>
+          <button class="testi-btn" id="testiNext"><i class="ri-arrow-right-s-line"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT ==================== -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Let's Build Something <span class="gradient-text">Great</span></h2>
+        <p class="section-subtitle">Have a project in mind? I'd love to hear about it.</p>
+      </div>
+
+      <div class="contact-grid">
+
+        <div class="contact-left reveal-left">
+          <div class="contact-info-card">
+            <h3>Contact Information</h3>
+            <p>Ready to start a project or just want to say hi? Reach out through any of these channels.</p>
+
+            <div class="contact-items">
+              <div class="contact-item">
+                <div class="contact-icon"><i class="ri-mail-line"></i></div>
+                <div>
+                  <span>Email</span>
+                  <a href="mailto:anandg.shopy@gmail.com">anandg.shopy@gmail.com</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon"><i class="ri-map-pin-line"></i></div>
+                <div>
+                  <span>Location</span>
+                  <strong>Mangalore, Karnataka, India</strong>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon"><i class="ri-time-line"></i></div>
+                <div>
+                  <span>Response Time</span>
+                  <strong>Within 24 hours</strong>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-socials">
+              <a href="#" class="social-btn" aria-label="GitHub"><i class="ri-github-fill"></i></a>
+              <a href="#" class="social-btn" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+              <a href="#" class="social-btn" aria-label="Twitter"><i class="ri-twitter-x-fill"></i></a>
+              <a href="#" class="social-btn" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+            </div>
+
+            <a href="https://wa.me/91XXXXXXXXXX" class="whatsapp-btn" target="_blank" rel="noopener">
+              <i class="ri-whatsapp-line"></i> Chat on WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-right reveal-right">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-field">
+                <input type="text" id="name" name="name" required autocomplete="off" />
+                <label for="name">Your Name</label>
+                <div class="form-line"></div>
+              </div>
+              <div class="form-field">
+                <input type="email" id="email" name="email" required autocomplete="off" />
+                <label for="email">Email Address</label>
+                <div class="form-line"></div>
+              </div>
+            </div>
+            <div class="form-field">
+              <input type="text" id="subject" name="subject" required autocomplete="off" />
+              <label for="subject">Subject</label>
+              <div class="form-line"></div>
+            </div>
+            <div class="form-field">
+              <select id="service" name="service">
+                <option value="" disabled selected></option>
+                <option value="shopify">Shopify Development</option>
+                <option value="wordpress">WordPress Development</option>
+                <option value="woocommerce">WooCommerce Setup</option>
+                <option value="optimization">Website Optimization</option>
+                <option value="landing">Landing Page Design</option>
+                <option value="other">Other</option>
+              </select>
+              <label for="service" class="select-label">Service Needed</label>
+              <div class="form-line"></div>
+            </div>
+            <div class="form-field">
+              <textarea id="message" name="message" rows="5" required autocomplete="off"></textarea>
+              <label for="message">Tell me about your project...</label>
+              <div class="form-line"></div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-submit" id="submitBtn">
+              <span class="btn-text"><i class="ri-send-plane-2-line"></i> Send Message</span>
+              <span class="btn-loading"><i class="ri-loader-4-line"></i> Sending...</span>
+              <div class="btn-glow"></div>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="footer-glow"></div>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">AG<span class="logo-dot"></span></div>
+          <p>Shopify & WordPress Developer crafting premium digital experiences from Mangalore, India.</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="GitHub"><i class="ri-github-fill"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+            <a href="#" aria-label="Twitter"><i class="ri-twitter-x-fill"></i></a>
+            <a href="#" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+          </div>
+        </div>
+        <div class="footer-nav-group">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav-group">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Shopify Development</a></li>
+            <li><a href="#services">WordPress Development</a></li>
+            <li><a href="#services">WooCommerce Setup</a></li>
+            <li><a href="#services">Website Optimization</a></li>
+            <li><a href="#services">Landing Pages</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav-group">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:anandg.shopy@gmail.com">anandg.shopy@gmail.com</a></li>
+            <li><span>Mangalore, Karnataka</span></li>
+            <li><span>India</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> Anand G. Crafted with <i class="ri-heart-fill" style="color:#ff4d6d"></i> in India.</p>
+        <p class="footer-credit">Shopify & WordPress Developer</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="ri-arrow-up-line"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
