@@ -181,7 +181,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   font-family: var(--font-primary);
   font-size: 3rem;
   font-weight: 900;
-  background: var(--grad-main);
+  background: url(your-image.jpg);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
